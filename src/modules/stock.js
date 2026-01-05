@@ -26,7 +26,7 @@ export async function initStock(container, user) {
                         <i data-lucide="plus" class="w-4 h-4"></i> Add Product
                     </button>
                     ` : ''}
-                    <button id="export-csv-btn" class="btn-secondary flex items-center gap-2">
+                    <button id="export-stock-btn" class="btn-secondary flex items-center gap-2">
                         <i data-lucide="download" class="w-4 h-4"></i> Export CSV
                     </button>
                 </div>

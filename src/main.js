@@ -21,22 +21,25 @@ let currentState = {
 }
 
 async function init() {
-    // Check session
-    const user = await checkAuth();
+    try {
+        // Check session
+        const user = await checkAuth();
 
-    if (!user) {
-        loading.style.display = 'none';
-        renderLogin(app);
-        return;
-    }
+        if (!user) {
+            loading.style.display = 'none';
+            renderLogin(app);
+            return;
+        }
 
-    currentState.user = user;
+        currentState.user = user;
 
-    // Simulate loading
-    setTimeout(() => {
+        // Simulate loading
         loading.style.display = 'none';
         renderApp();
-    }, 500);
+    } catch (err) {
+        console.error("Init failed:", err);
+        loading.innerHTML = `<div class="text-red-500 font-bold text-xl">App Crashed: ${err.message}</div>`;
+    }
 }
 
 function renderApp() {
