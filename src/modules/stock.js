@@ -1,5 +1,5 @@
 import { supabase } from '../supabase.js';
-import { Plus, Search, Edit2, Trash2, Download } from 'lucide';
+
 
 export async function initStock(container, user) {
     const isStoreAdmin = !!user.store_id; // Simple check

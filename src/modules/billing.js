@@ -1,7 +1,7 @@
 import { supabase } from '../supabase.js';
 import { jsPDF } from 'jspdf';
 import 'jspdf-autotable';
-import { Trash2, Printer, Download, PlusCircle } from 'lucide';
+
 
 
 export async function initBilling(container, user) {

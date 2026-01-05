@@ -1,4 +1,4 @@
-import { Zap, Box, Receipt, Wrench, BarChart2, LogOut, LayoutList, GitPullRequest } from 'lucide';
+
 
 export function renderSidebar(container, navigateCallback, user) {
     // Icons need to be lucide names as strings if we are using the CDN script, 
