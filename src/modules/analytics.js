@@ -2,7 +2,7 @@ import { supabase } from '../supabase.js';
 import Chart from 'chart.js/auto';
 import { jsPDF } from 'jspdf';
 import 'jspdf-autotable';
-import { FileDown } from 'lucide';
+
 
 export async function initAnalytics(container, user) {
     const isSuperAdmin = user.role === 'super_admin';

@@ -1,5 +1,5 @@
 import { supabase } from '../supabase.js';
-import { Calendar, Search, Filter, Download } from 'lucide';
+
 
 export async function initRepairHistory(container, user) {
     const isSuperAdmin = user.role === 'super_admin';
